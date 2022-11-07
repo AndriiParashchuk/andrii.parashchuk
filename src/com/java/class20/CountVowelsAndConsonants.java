@@ -8,14 +8,12 @@ public class CountVowelsAndConsonants {
         System.out.println("Enter a string: ");
         String s = sc.nextLine().toLowerCase();
         int vowelCount = 0, consonantCount = 0;
-        int spaceCount = 0;
+
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if ((c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u'))
                 vowelCount++;
-            else if (c == ' ') {
-                spaceCount++;
-            } else {
+            else if (c >= 'a' && c <='z') {
                 consonantCount++;
             }
 
