@@ -11,7 +11,7 @@ public class FIndReversOfGivenString {
         String rev = "";
 
 
-        for(int i=0; i < s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             System.out.print(s.charAt(s.length() - 1 - i));
         }
 
