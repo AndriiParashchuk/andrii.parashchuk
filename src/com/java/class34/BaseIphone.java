@@ -19,6 +19,10 @@ public class BaseIphone {
         this.iOSVersion = iOSVersion;
     }
 
+    public BaseIphone() {
+
+    }
+
     public String writeAMessage(String messages) {
         return messages;
     }

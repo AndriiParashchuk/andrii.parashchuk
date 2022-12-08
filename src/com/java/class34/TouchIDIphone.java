@@ -5,6 +5,10 @@ public class TouchIDIphone extends BaseIphone {
         super(model, memoryInMg, color, iOSVersion);
     }
 
+    public TouchIDIphone() {
+        super();
+    }
+
     public boolean touchId(String fingerPrint){
         if (fingerPrint.equalsIgnoreCase("JJAA")){
             return true;
