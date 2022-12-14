@@ -26,9 +26,8 @@ public class Demo {
         Patient ps = new SeniorPatient();
         ps.takeTylanol();
         ps.takePayment();
-        System.out.println(ps.calculatePayment(1000,70));
-        System.out.println(p.calculatePayment(100,70));
-
+        System.out.println(ps.calculatePayment(1000, 70));
+        System.out.println(p.calculatePayment(100, 70));
 
 
         Scanner scanner = new Scanner(System.in);
@@ -49,14 +48,11 @@ public class Demo {
         //this helps to write the logic once.
 
         Patient patient;
-        if (age<10)
-        {
+        if (age < 10) {
             patient = new ChildPatient();
-        }
-        else if (age < 60){
+        } else if (age < 60) {
             patient = new GeneralPatient();
-        }
-        else {
+        } else {
             patient = new SeniorPatient();
         }
 
